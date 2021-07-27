@@ -1,0 +1,19 @@
+
+List<Employeee> fetchNameAndSal = service.fetchNameAndSal("man", 80);
+			// iterating the loop 1st way for loop
+			/*	for (Employeee emp : fetchNameAndSal) {
+					System.out.println(emp);
+				}*/
+
+			// iterating the loop 2nd way using iterator
+			/*		Iterator<Employeee> it = fetchNameAndSal.iterator();
+							while (it.hasNext()) {
+						Employeee emp = it.next();
+						System.out.println(emp);
+					}*/
+			// iterating the loop 3rd way using Lambda
+			// fetchNameAndSal.forEach(emp -> System.out.println(emp));
+			// iterating the loop 4th way using Lambda
+			// fetchNameAndSal.stream().forEachOrdered(System.out::println);
+			// iterating the loop 5th way using Lambda
+			//fetchNameAndSal.stream().forEachOrdered(fetchData -> System.out.println(fetchData));
